@@ -192,6 +192,10 @@ ifeq ($(TARGET_ARCH_VARIANT),armv6)
 	ARCH_ARMV6_ARMV7 := true
 endif
 
+ifeq ($(TARGET_ARCH_VARIANT),armv6-vfp)
+	ARCH_ARMV6_ARMV7 := true
+endif
+
 ifeq ($(TARGET_ARCH_VARIANT),armv7-a)
 	ARCH_ARMV6_ARMV7 := true
 endif
